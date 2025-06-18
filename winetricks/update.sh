@@ -3,7 +3,7 @@ set -euxo pipefail
 
 ec=0
 
-SPEC=winetricks-git.spec
+SPEC=winetricks.spec
 
 oldTag="$(rpmspec -q --qf "%{version}\n" $SPEC | head -1 | sed 's/\^.*//')"
 newTag="$(curl -s 'https://api.github.com/repos/Winetricks/winetricks/commits/master' | jq .commit.committer.date | sed 's/"//g; s/-//g' | awk -F "T" '{print $1}')"
