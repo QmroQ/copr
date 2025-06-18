@@ -1,9 +1,9 @@
-%global commit0 9279fc0acdb7501a68258fe2da8424774e79b860
+%global commit0 9e29aa7e2d8e84880aec741ed92eed35baa742ac
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global bumpver 0
+%global bumpver 1
 
 Name:           winetricks
-Version:        20250611
+Version:        20250612
 Release:        %{bumpver}.git%{shortcommit0}
 
 Summary:        Winetricks is an easy way to work around problems in Wine
